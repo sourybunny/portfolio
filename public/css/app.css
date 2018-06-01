@@ -25,11 +25,9 @@ body{
   width:100%;
   
 }
-.main-container{
-  background:white;
-}
+
 .content{
-  flex-basis:400px;
+  flex-basis:300px;
  
 }
 .left-content{
@@ -62,10 +60,10 @@ body{
 }
 
 .head{
-  padding:20px;
+  padding:10px;
   background:rgba(255,255,255,0.3);
-  margin:23px;
-  margin-left:200px;
+  margin:0px;
+  margin-left:150px;
   
 }
 @keyframes slideright{
@@ -78,14 +76,14 @@ body{
 
 .head p{
   font-family:'raleway';
-  font-size:20px;
+  font-size:18px;
   /*font-weight: bold;*/
 }
 
 .head h1{
-  font-size:150px;
+  font-size:130px;
   /*margin-top:-100px;*/
-  margin-left:-250px;
+  margin-left:200px;
   background: #4a21fc;
   animation:slideright 1s ease-in-out forwards;
 }
@@ -237,7 +235,7 @@ margin-right:50px;
 }
 
 .portfolio .card{
-  margin:12px;
+  /*margin:12px;*/
   width:300px;
 }
 .projects{
@@ -249,14 +247,14 @@ margin-right:50px;
 
 .about p{
   font-family:Raleway;
-  font-size:20px;
+  font-size:16px;
 }
 .aboutme{
   font-family:Raleway;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-around;
-  margin:40px;
+  /*margin:40px;*/
   
 }
 
