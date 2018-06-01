@@ -1,0 +1,288 @@
+body{
+  margin:0;
+  font-family:'Palanquin dark'
+}
+.card-photo .card-image{
+  background-image: url(../media/profilepic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:67vh;
+  height:90vh;
+  box-shadow:16px 18px 90px 2px grey;
+
+}
+.card-photo{
+  position:absolute;
+  right:800px;
+  left:220px;
+  top:100px;
+  width:67vh;
+}
+
+.contain{
+  display:flex;
+  /*height:140vh;*/
+  width:100%;
+  
+}
+.main-container{
+  background:white;
+}
+.content{
+  flex-basis:400px;
+ 
+}
+.left-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background: #4a21fc;
+  /*background:#fd5f65;*/
+  /*background:#eac042;*/
+  flex-grow:1;
+  flex-shrink:0;
+}
+.brand{
+  border: 1px solid white;
+  width:50px;
+  height:50px;
+  font-family:'raleway';
+  text-transform:uppercase;
+  font-size:35px;
+  text-align:center;
+  background:black;
+
+}
+
+.right-content{
+  z-index:1;
+  flex-grow:4;
+  flex-shrink:4;
+
+}
+
+.head{
+  padding:20px;
+  background:rgba(255,255,255,0.3);
+  margin:23px;
+  margin-left:200px;
+  
+}
+@keyframes slideright{
+  100%{
+    
+    margin-left:0px;
+  
+  }
+}
+
+.head p{
+  font-family:'raleway';
+  font-size:20px;
+  /*font-weight: bold;*/
+}
+
+.head h1{
+  font-size:150px;
+  /*margin-top:-100px;*/
+  margin-left:-250px;
+  background: #4a21fc;
+  animation:slideright 1s ease-in-out forwards;
+}
+
+.head .main-buttons{
+  display:flex;
+  margin-bottom:50px;
+  
+}
+.head h3,h5{
+  letter-spacing:3px;
+  margin:0;
+  text-transform:uppercase;
+  margin-top:20px;
+}
+.details ul{
+  display:flex;
+  
+}
+.details ul li{
+  margin:3px;
+  /*border:2px solid white;*/
+  border-radius:30px;
+}
+.details a: hover{
+  background:black;
+}
+.portfolio h2{
+  margin-bottom:30px;
+}
+
+/*h5{*/
+  
+/*  margin-top:20px;*/
+/*}*/
+  
+@media screen and (max-width: 1300px){
+  .card-photo{
+    width:60vh;
+    right:500px;
+    left:200px;
+/*    height:500px;  */
+  }
+}
+@media screen and (max-width: 1100px){
+  .card-photo{
+    width:40vh;
+    
+    left:125px; 
+  }
+  .left-content{
+    flex-shrink:2;
+  }
+
+
+}
+
+@media screen and (max-width: 850px){
+  .card-photo{
+   display:none;    
+  }
+  .contain{
+    flex-wrap:wrap;
+  }
+  .content{
+  flex-grow:1;
+  }
+  .left-content{
+    order:2;
+    display:none;
+/*     height:100px; */
+/*       align-items:center; */
+  }
+
+
+  body{
+    padding:0;
+  }
+  .head{
+    margin:40px;
+    
+  }
+  .head .main-buttons{
+  flex-direction:column;
+    width:220px;
+
+}
+}
+
+@media screen and (max-width:450px){
+  
+  .head{
+    margin-top:0px;
+  }
+  .head h1{
+    /*width:200px;*/
+    margin-top:0;
+    font-size:130px;
+  }
+  .head h5{
+    font-size:20px;
+  }
+
+}
+.btn-large{
+  letter-spacing:3px;
+  font-size:18px;
+  margin:15px;
+  margin-left:0;
+  /*border:2px solid white;*/
+  border-radius:50px;
+  background: #4a21fc;
+  transition:background 2s;
+}
+.btn-large:hover{
+  color:black;
+  background:white;
+  border: 2px solid black;
+}
+.card-reveal .btn-small{
+  background: #4a21fc;
+  padding:8px;
+}
+
+
+.details{
+  font-size:15px;
+  font-family:'raleway';
+  margin-left:20px;
+  margin-top:95vh;
+}
+.details li a{
+  background: #4a21fc;;
+}
+
+
+.carousel-item img{
+  height:200px;
+}
+section h2{
+  margin:0;
+  padding-top:40px;
+}
+
+/*portfolio section*/
+
+.fab-button-like{
+margin-right:50px;
+}
+
+.portfolio .card{
+  margin:12px;
+  width:300px;
+}
+.projects{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.about p{
+  font-family:Raleway;
+  font-size:20px;
+}
+.aboutme{
+  font-family:Raleway;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  margin:40px;
+  
+}
+
+
+.about .slider{
+  width:350px;
+  margin:10px;
+  margin-bottom:40px;
+}
+.skills h2{
+  margin-top:0;
+  margin-bottom:30px;
+}
+.skills .container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+li{
+  list-style-type:none;
+}
+.skills .card-panel{
+  display:flex;
+  justify-content:space-around;
+  width:300px;
+}
+.footer-copyright a{
+  margin:5px;
+}
