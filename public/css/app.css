@@ -21,23 +21,16 @@ html,body{
 
 .contain{
   display:flex;
-  /*height:140vh;*/
-  /*width:100%;*/
-  
-  
 }
 
 .right-content{
   flex-basis:180px;
- 
 }
 .left-content{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   background: #4a21fc;
-  /*background:#fd5f65;*/
-  /*background:#eac042;*/
   flex-grow:1;
   flex-shrink:1;
 }
