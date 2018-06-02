@@ -1,4 +1,4 @@
-body{
+html,body{
   margin:0;
   font-family:'Palanquin dark'
 }
@@ -6,28 +6,29 @@ body{
   background-image: url(../media/profilepic1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width:67vh;
+  width:65vh;
   height:90vh;
   box-shadow:16px 18px 90px 2px grey;
 
 }
 .card-photo{
   position:absolute;
-  right:800px;
-  left:220px;
+  /*right:600px;*/
+  left:180px;
   top:100px;
-  width:67vh;
+  width:65vh;
 }
 
 .contain{
   display:flex;
   /*height:140vh;*/
   width:100%;
+  /*flex-wrap:wrap;*/
   
 }
 
 .content{
-  flex-basis:300px;
+  flex-basis:200px;
  
 }
 .left-content{
@@ -55,15 +56,15 @@ body{
 .right-content{
   z-index:1;
   flex-grow:4;
-  flex-shrink:4;
+  flex-shrink:2;
 
 }
 
 .head{
-  padding:10px;
+  padding:20px;
   background:rgba(255,255,255,0.3);
   margin:0px;
-  margin-left:150px;
+  margin-left:200px;
   
 }
 @keyframes slideright{
@@ -108,7 +109,7 @@ body{
   /*border:2px solid white;*/
   border-radius:30px;
 }
-.details a: hover{
+.details li a:hover{
   background:black;
 }
 .portfolio h2{
@@ -148,12 +149,14 @@ body{
   .contain{
     flex-wrap:wrap;
   }
-  .content{
+  .right-content{
   flex-grow:1;
   }
-  .left-content{
-    order:2;
+  .left-content {
+    /*order:-1;*/
     display:none;
+    /*flex-basis:0;*/
+    
 /*     height:100px; */
 /*       align-items:center; */
   }
@@ -163,7 +166,8 @@ body{
     padding:0;
   }
   .head{
-    margin:40px;
+    margin:0px;
+    
     
   }
   .head .main-buttons{
@@ -235,8 +239,8 @@ margin-right:50px;
 }
 
 .portfolio .card{
-  /*margin:12px;*/
-  width:300px;
+  margin:6px;
+  width:280px;
 }
 .projects{
   display:flex;
@@ -247,7 +251,7 @@ margin-right:50px;
 
 .about p{
   font-family:Raleway;
-  font-size:16px;
+  font-size:18px;
 }
 .aboutme{
   font-family:Raleway;
@@ -262,7 +266,7 @@ margin-right:50px;
 .about .slider{
   width:350px;
   margin:10px;
-  margin-bottom:40px;
+  
 }
 .skills h2{
   margin-top:0;
