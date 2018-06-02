@@ -177,7 +177,12 @@ html,body{
 
 @media screen and (min-width:1366px){
   .head{
-    margin-left:250px;
+    margin-left:180px;
+  }
+    .card-photo{
+    /*width:60vh;*/
+    left:150px;
+    /*height:85vh;*/
   }
 }
 .btn-large{
