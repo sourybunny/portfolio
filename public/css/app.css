@@ -1,7 +1,9 @@
 html,body{
   margin:0;
-  font-family:'Palanquin dark'
+  font-family:'Palanquin dark';
+  overflow-x: hidden;
 }
+
 .card-photo .card-image{
   background-image: url(../media/profilepic1.jpg);
   background-repeat: no-repeat;
@@ -9,10 +11,12 @@ html,body{
   width:65vh;
   height:90vh;
   box-shadow:16px 18px 90px 2px grey;
+  min-width:50vh;
 
 }
 .card-photo{
   position:absolute;
+  min-width:50vh;
   /*right:600px;*/
   left:150px;
   top:100px;
@@ -25,6 +29,7 @@ html,body{
 
 .right-content{
   flex-basis:180px;
+  
 }
 .left-content{
   display:flex;
@@ -57,7 +62,8 @@ html,body{
   padding:20px;
   background:rgba(255,255,255,0.3);
   margin:0px;
-  margin-left:200px;
+  margin-left:180px;
+  box-sizing: border-box;
   
 }
 @keyframes slideright{
@@ -75,7 +81,7 @@ html,body{
 }
 
 .head h1{
-  font-size:140px;
+  font-size:130px;
   /*margin-top:-100px;*/
   margin-left:200px;
   background: #4a21fc;
@@ -109,30 +115,46 @@ html,body{
   margin-bottom:30px;
 }
 
-/*h5{*/
-  
-/*  margin-top:20px;*/
-/*}*/
-  
-/*@media screen and (max-width: 1300px){*/
-/*  .card-photo,.card-image{*/
-/*    width:60vh;*/
-/*  }*/
-/*}*/
-@media screen and (max-width: 1100px){
-  /*.card-photo,.card-image{*/
-    /*width:40vh;*/
-    
-    /*left:125px; */
-  /*}*/
-  /*.left-content{*/
-  /*  flex-shrink:2;*/
-  /*}*/
 
+@media screen and (min-width: 1024px) and (max-width:1366px){
+  .head{
+    margin-left:180px;
+    justify-content:space-between;
+  }
+  .card-photo .card-image{
+    width:60vh;
+    height:85vh;
+  }
+  .card-photo{
+    width:60vh;
+    left:100px;
+    height:85vh;
+  }
+  .left-content{
+    flex-shrink:2;
+  }
 
 }
 
-@media screen and (max-width: 900px){
+@media (min-width:1023),screen and (orientation:portrait){
+    .left-content {
+    order:2;
+ 
+   display:none;
+
+  }
+  .head{
+  margin:10px;
+  box-sizing:border-box;
+}
+  .head .main-buttons{
+  flex-direction:column;
+    width:220px;
+
+}
+}
+
+@media screen and (max-width: 1023px){
 
   .left-content {
     order:2;
@@ -142,7 +164,8 @@ html,body{
   }
 
 .head{
-  margin:5px;
+  margin:10px;
+  box-sizing:border-box;
 }
   .head .main-buttons{
   flex-direction:column;
@@ -151,29 +174,11 @@ html,body{
 }
 }
 
-/*@media screen and (max-width:450px){*/
-/*  .left-content{*/
-/*    display:none;*/
-/*  }*/
-/*  #left{*/
-/*    display:none;*/
-/*  }*/
-/*  #photo{*/
-/*    display:none;*/
-/*  }*/
-/*  .head{*/
-/*    margin-top:0px;*/
-/*  }*/
-/*  .head h1{*/
-    /*width:200px;*/
-/*    margin-top:0;*/
-/*    font-size:130px;*/
-/*  }*/
-/*  .head h5{*/
-/*    font-size:20px;*/
-/*  }*/
-
-/*}*/
+@media screen and (min-width:1366px){
+  .head{
+    margin-left:250px;
+  }
+}
 .btn-large{
   letter-spacing:3px;
   font-size:18px;
@@ -221,7 +226,7 @@ margin-right:50px;
 }
 
 .portfolio .card{
-  margin:6px;
+  margin:10px;
   width:280px;
 }
 .projects{
@@ -229,6 +234,7 @@ margin-right:50px;
   flex-wrap:wrap;
   justify-content:space-around;
   align-items:center;
+  margin-bottom:30px;
 }
 
 .about p{
@@ -246,8 +252,8 @@ margin-right:50px;
 
 
 .about .slider{
-  width:350px;
-  margin:10px;
+  width:330px;
+  margin:20px;
   
 }
 .skills h2{
